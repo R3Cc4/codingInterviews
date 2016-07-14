@@ -1,0 +1,8 @@
+John:3
+Smith:5
+John:6
+Amy:3
+Smith:5
+Carol:3
+King:6
+Amy:1
