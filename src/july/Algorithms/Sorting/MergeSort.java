@@ -25,7 +25,6 @@ public class MergeSort  {
 
         left =IntStream.range(0,left.length).map(i->unsortedArray[i]).toArray();
         right=IntStream.range(0,right.length).map(i -> unsortedArray[mid+i]).toArray();
-
         mergeSort(left);
         mergeSort(right);
         merge(left,right,unsortedArray);
@@ -67,7 +66,8 @@ public class MergeSort  {
             sorted[k]=right[j];
             j++;k++;
         }
-
+        left=null;
+        right=null;
         return sorted;
     }
     
